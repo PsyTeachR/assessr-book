@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Getting Started | Marking R assignments with assessr</title>
+  <meta name="description" content="Documentation for the R package assessr." />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Getting Started | Marking R assignments with assessr" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Documentation for the R package assessr." />
+  <meta name="github-repo" content="psyteachr/assessr-book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Getting Started | Marking R assignments with assessr" />
+  
+  <meta name="twitter:description" content="Documentation for the R package assessr." />
+  
+
+<meta name="author" content="Dale J. Barr" />
+
+
+<meta name="date" content="2019-10-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="introduction.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Marking R assignments with assessr</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About <code>assessr</code> and this book</a></li>
+<li class="chapter" data-level="2" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a><ul>
+<li class="chapter" data-level="2.1" data-path="getting-started.html"><a href="getting-started.html#prerequisites"><i class="fa fa-check"></i><b>2.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2.2" data-path="getting-started.html"><a href="getting-started.html#installation"><i class="fa fa-check"></i><b>2.2</b> Installation</a></li>
+<li class="chapter" data-level="2.3" data-path="getting-started.html"><a href="getting-started.html#getting-help"><i class="fa fa-check"></i><b>2.3</b> Getting help</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>3</b> Introduction</a><ul>
+<li class="chapter" data-level="3.1" data-path="introduction.html"><a href="introduction.html#installation-1"><i class="fa fa-check"></i><b>3.1</b> Installation</a></li>
+<li class="chapter" data-level="3.2" data-path="introduction.html"><a href="introduction.html#background"><i class="fa fa-check"></i><b>3.2</b> Background</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="introduction.html"><a href="introduction.html#components-of-an-assignment"><i class="fa fa-check"></i><b>3.2.1</b> Components of an assignment</a></li>
+<li class="chapter" data-level="3.2.2" data-path="introduction.html"><a href="introduction.html#assessment-and-feedback-workflow"><i class="fa fa-check"></i><b>3.2.2</b> Assessment and feedback workflow</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="introduction.html"><a href="introduction.html#tutorial-example"><i class="fa fa-check"></i><b>3.3</b> Tutorial example</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="introduction.html"><a href="introduction.html#creating-the-master-file-for-a-task"><i class="fa fa-check"></i><b>3.3.1</b> Creating the master file for a task</a></li>
+<li class="chapter" data-level="3.3.2" data-path="introduction.html"><a href="introduction.html#rendering-a-stub-file"><i class="fa fa-check"></i><b>3.3.2</b> Rendering a stub file</a></li>
+<li class="chapter" data-level="3.3.3" data-path="introduction.html"><a href="introduction.html#writing-assessment-code"><i class="fa fa-check"></i><b>3.3.3</b> Writing assessment code</a></li>
+<li class="chapter" data-level="3.3.4" data-path="introduction.html"><a href="introduction.html#testing-your-assessment-code"><i class="fa fa-check"></i><b>3.3.4</b> Testing your assessment code</a></li>
+<li class="chapter" data-level="3.3.5" data-path="introduction.html"><a href="introduction.html#automated-assessment-and-feedback"><i class="fa fa-check"></i><b>3.3.5</b> Automated assessment and feedback</a></li>
+<li class="chapter" data-level="3.3.6" data-path="introduction.html"><a href="introduction.html#checking-and-overriding-assessment-results"><i class="fa fa-check"></i><b>3.3.6</b> Checking and overriding assessment results</a></li>
+<li class="chapter" data-level="3.3.7" data-path="introduction.html"><a href="introduction.html#rendering-feedback-files"><i class="fa fa-check"></i><b>3.3.7</b> Rendering feedback files</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/psyteachr" target="blank">The PsyTeachR Team</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Marking R assignments with assessr</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="getting-started" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Getting Started</h1>
+<div id="prerequisites" class="section level2">
+<h2><span class="header-section-number">2.1</span> Prerequisites</h2>
+</div>
+<div id="installation" class="section level2">
+<h2><span class="header-section-number">2.2</span> Installation</h2>
+</div>
+<div id="getting-help" class="section level2">
+<h2><span class="header-section-number">2.3</span> Getting help</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/psyteachr/assessr-book/edit/master/01-getting-started.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["assessr.pdf", "assessr.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
