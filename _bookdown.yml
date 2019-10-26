@@ -1,6 +1,7 @@
 book_filename: "assessr"
 new_session: yes
 output_dir: "docs"
+before_chapter_script: ["include/setup.R"]
 delete_merged_file: true
 language:
   ui:
