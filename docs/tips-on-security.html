@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Getting Started | Marking R assignments with assessr</title>
+  <title>Chapter 4 Tips on Security | Marking R assignments with assessr</title>
   <meta name="description" content="Documentation for the R package assessr." />
   <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Getting Started | Marking R assignments with assessr" />
+  <meta property="og:title" content="Chapter 4 Tips on Security | Marking R assignments with assessr" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="psyteachr/assessr-book" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Getting Started | Marking R assignments with assessr" />
+  <meta name="twitter:title" content="Chapter 4 Tips on Security | Marking R assignments with assessr" />
   
   <meta name="twitter:description" content="Documentation for the R package assessr." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="introduction.html">
+<link rel="prev" href="introduction.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -114,16 +114,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="getting-started" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Getting Started</h1>
-<div id="prerequisites" class="section level2">
-<h2><span class="header-section-number">2.1</span> Prerequisites</h2>
+<div id="tips-on-security" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Tips on Security</h1>
+<p>Blindly running other people’s code is a dangerous proposition. Although students are unlikely to deliberately include malicious code such as <code>system(&quot;rm -rf /&quot;)</code>, a hacker who discovers an unsecured upload site for RMarkdown files could easily do this.</p>
+<p>A student is more likely to include code such as <code>install.packages(&quot;tidyverse&quot;)</code> which will not only take a long time to run, but can seriously damage your R installation.</p>
+<p>While it is not possible to have a setup that is 100% free from vulnerabilities, here are two tips that can minimize the chances of running problematic code.</p>
+<div id="controlling-who-can-submit" class="section level2">
+<h2><span class="header-section-number">4.1</span> Controlling who can submit</h2>
+<div id="use-a-digital-learning-environment-dle" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Use a Digital Learning Environment (DLE)</h3>
 </div>
-<div id="installation" class="section level2">
-<h2><span class="header-section-number">2.2</span> Installation</h2>
 </div>
-<div id="getting-help" class="section level2">
-<h2><span class="header-section-number">2.3</span> Getting help</h2>
+<div id="run-code-inside-a-virtual-environment-or-container" class="section level2">
+<h2><span class="header-section-number">4.2</span> Run code inside a virtual environment or container</h2>
 
 </div>
 </div>
@@ -132,8 +135,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="introduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -163,7 +166,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/psyteachr/assessr-book/edit/master/01-getting-started.Rmd",
+"link": "https://github.com/psyteachr/assessr-book/edit/master/06-security.Rmd",
 "text": "Edit"
 },
 "history": {
